@@ -5,6 +5,7 @@
 server:
   port: 8001
 spring:
+  profiles：dev
   application:
     name: gc-test-platform-user-provider
   datasource:
