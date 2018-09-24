@@ -33,6 +33,11 @@ eureka:
   instance:
     instance-id: gc-test-platform-user-provider-8001
     prefer-ip-address: true
+info:
+  app.name: gc-test-platform
+  company.name: www.jeremy.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
 ---
 # 测试环境配置
 server:
@@ -66,7 +71,11 @@ eureka:
   instance:
     instance-id: gc-test-platform-user-provider-8001
     prefer-ip-address: true
-
+info:
+  app.name: gc-test-platform
+  company.name: www.jeremy.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
 ---
 # 生产环境配置
 server:
@@ -103,7 +112,7 @@ eureka:
     
     
     
- info:
+info:
   app.name: gc-test-platform
   company.name: www.jeremy.com
   build.artifactId: $project.artifactId$
