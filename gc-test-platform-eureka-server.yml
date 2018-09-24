@@ -16,6 +16,7 @@ server:
   port: 7001
 spring:
   profiles: dev  #开发环境
+  name: gc-test-platform-eureka-server
 ---
 eureka:
   instance:
@@ -30,6 +31,7 @@ server:
   port: 7002
 spring:
   profiles: test  #测试环境
+  name: gc-test-platform-eureka-server
 ---
   eureka:
     instance:
@@ -44,3 +46,4 @@ spring:
     port: 7003
   spring:
     profiles: prod  #测试环境
+    name: gc-test-platform-eureka-server
